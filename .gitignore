@@ -1,0 +1,42 @@
+# --- Personal configuration and secrets -----------------------------------
+# Your own button list. It holds your values (some encrypted for this Windows
+# account only), so it is not portable and must not be published.
+buttons.json
+# The rollback copy written before every save. Can still contain the plaintext
+# of a secret from before it was encrypted.
+buttons.json.bak
+
+# Local overrides: editor path, clipboard timings, feature toggles.
+.env
+
+# --- Python ---------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+ENV/
+
+# --- Windows shortcuts and OS clutter -------------------------------------
+# quick_fill.lnk points at an absolute path on this machine.
+*.lnk
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# --- Editors --------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- Logs and scratch files -----------------------------------------------
+*.log
+*.tmp
+.buttons-*.tmp
